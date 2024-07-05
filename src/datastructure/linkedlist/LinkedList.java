@@ -94,4 +94,16 @@ public class LinkedList {
         }
         length++;
     }
+
+    public Node removeFirst() {
+        if (length == 0) return null;
+        Node temp = head;
+        head = head.getNext();
+        temp.setNext(null);
+        length--;
+        if (length == 0) {
+            tail = null;
+        }
+        return temp;
+    }
 }
