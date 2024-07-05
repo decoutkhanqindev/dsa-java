@@ -43,4 +43,13 @@ public class LinkedList {
     public void setLength(int length) {
         this.length = length;
     }
+
+    public void printList() {
+        System.out.print("My Linked List: ");
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.getValue() + ", ");
+            temp = temp.getNext();
+        }
+    }
 }
