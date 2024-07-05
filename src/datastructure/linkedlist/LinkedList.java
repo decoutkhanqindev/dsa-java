@@ -48,8 +48,21 @@ public class LinkedList {
         System.out.print("My Linked List: ");
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.getValue() + ", ");
+            System.out.print(temp.getValue() + " -> ");
             temp = temp.getNext();
         }
+        System.out.print("null");
+    }
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.setNext(newNode);
+            tail = newNode;
+        }
+        length++;
     }
 }
