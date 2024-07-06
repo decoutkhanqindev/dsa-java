@@ -51,7 +51,7 @@ public class LinkedList {
             System.out.print(temp.getValue() + " -> ");
             temp = temp.getNext();
         }
-        System.out.print("null");
+        System.out.println("null");
     }
 
     public void append(int value) {
@@ -69,7 +69,7 @@ public class LinkedList {
     public Node removeLast() {
         Node temp = head;
         Node pre = head;
-        while(temp.getNext() != null) {
+        while (temp.getNext() != null) {
             pre = temp;
             temp = temp.getNext();
         }
@@ -103,6 +103,15 @@ public class LinkedList {
         length--;
         if (length == 0) {
             tail = null;
+        }
+        return temp;
+    }
+
+    public Node get(int index) {
+        if (index < 0 || index >= length) return null;
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.getNext();
         }
         return temp;
     }
