@@ -155,4 +155,18 @@ public class LinkedList {
         length--;
         return temp;
     }
+
+    public void reverse() {
+        Node temp = head;
+        head = tail;
+        tail = temp;
+        Node after = temp.getNext();
+        Node before = null;
+        for (int i = 0; i < length; i++) {
+            after = temp.getNext();
+            temp.setNext(before);
+            before = temp;
+            temp = after;
+        }
+    }
 }
