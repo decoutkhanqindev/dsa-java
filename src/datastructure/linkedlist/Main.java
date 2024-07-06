@@ -17,7 +17,8 @@ public class Main {
 //        myLinkedList.set(3, 11);
         myLinkedList.printList();
 
-        System.out.println(myLinkedList.remove(0).getValue());
+//        System.out.println(myLinkedList.remove(0).getValue());
+        myLinkedList.reverse();
         myLinkedList.printList();
 
 //        System.out.println(myLinkedList.get(7).getValue());
