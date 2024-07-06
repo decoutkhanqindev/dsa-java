@@ -13,11 +13,11 @@ public class Main {
 //        myLinkedList.removeLast();
 //        myLinkedList.removeFirst();
 
-        myLinkedList.set(3, 11);
+//        myLinkedList.set(3, 11);
 
         myLinkedList.printList();
 
-//        System.out.println(myLinkedList.get(4).getValue());
+        System.out.println(myLinkedList.get(6).getValue());
 
     }
 }
