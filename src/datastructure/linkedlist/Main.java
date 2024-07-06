@@ -9,10 +9,15 @@ public class Main {
         myLinkedList.append(13);
         myLinkedList.append(8);
         myLinkedList.prepend(1);
+
 //        myLinkedList.removeLast();
 //        myLinkedList.removeFirst();
+
+        myLinkedList.set(3, 11);
+
         myLinkedList.printList();
 
-        System.out.println(myLinkedList.get(4).getValue());
+//        System.out.println(myLinkedList.get(4).getValue());
+
     }
 }
