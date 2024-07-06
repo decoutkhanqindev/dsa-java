@@ -15,7 +15,9 @@ public class Main {
 //        myLinkedList.removeFirst();
 
 //        myLinkedList.set(3, 11);
+        myLinkedList.printList();
 
+        System.out.println(myLinkedList.remove(0).getValue());
         myLinkedList.printList();
 
 //        System.out.println(myLinkedList.get(7).getValue());
