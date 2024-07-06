@@ -10,6 +10,7 @@ public class Main {
         myLinkedList.append(8);
         myLinkedList.prepend(1);
 
+        myLinkedList.insert(2, 15);
 //        myLinkedList.removeLast();
 //        myLinkedList.removeFirst();
 
@@ -17,7 +18,7 @@ public class Main {
 
         myLinkedList.printList();
 
-        System.out.println(myLinkedList.get(6).getValue());
+//        System.out.println(myLinkedList.get(7).getValue());
 
     }
 }
