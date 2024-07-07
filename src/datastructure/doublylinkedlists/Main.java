@@ -2,6 +2,12 @@ package datastructure.doublylinkedlists;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        DoublyLinkedList doublyLinkedList = new DoublyLinkedList(7);
+
+        doublyLinkedList.getHead();
+        doublyLinkedList.getTail();
+        doublyLinkedList.getLength();
+
+        doublyLinkedList.printList();
     }
 }
