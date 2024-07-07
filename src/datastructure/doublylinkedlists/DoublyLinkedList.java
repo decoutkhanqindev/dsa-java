@@ -45,7 +45,7 @@ public class DoublyLinkedList {
     }
 
     public void printList() {
-        System.out.print("My Linked List: ");
+        System.out.print("My Doubly Linked List: ");
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.getValue() + " -> ");
