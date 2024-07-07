@@ -45,13 +45,17 @@ public class DoublyLinkedList {
     }
 
     public void printList() {
-        System.out.print("My Doubly Linked List: null <-> ");
+        System.out.print("My Doubly Linked List: null <- ");
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.getValue() + " <-> ");
+            if (temp.getNext() == null) {
+                System.out.print(temp.getValue() + " -> null");
+            } else {
+                System.out.print(temp.getValue() + " <-> ");
+            }
             temp = temp.getNext();
         }
-        System.out.println("null");
+        System.out.println();
     }
 
     public void append(int value) {
@@ -65,5 +69,20 @@ public class DoublyLinkedList {
             tail = newNode;
         }
         length++;
+    }
+
+    public Node removeLast() {
+        if (length == 0) return null;
+        Node temp = tail;
+        if (length == 1) {
+            head = null;
+            tail = null;
+        } else {
+            tail = temp.getPrev();
+            tail.setNext(null);
+            temp.setPrev(null);
+        }
+        length--;
+        return temp;
     }
 }
