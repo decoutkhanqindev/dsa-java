@@ -12,6 +12,14 @@ public class DoublyLinkedList {
         length = 1;
     }
 
+    public void getHead() {
+        if (tail != null) {
+            System.out.println("Head: " + head.getValue());
+        } else {
+            System.out.println("Head: null");
+        }
+    }
+
     public void setHead(Node head) {
         this.head = head;
     }
