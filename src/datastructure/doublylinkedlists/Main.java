@@ -5,8 +5,10 @@ public class Main {
         DoublyLinkedList doublyLinkedList = new DoublyLinkedList(7);
         doublyLinkedList.append(10);
         doublyLinkedList.prepend(9);
+        doublyLinkedList.append(10);
 
-        doublyLinkedList.removeFirst();
         doublyLinkedList.printList();
+
+        System.out.println(doublyLinkedList.get(3).getValue());
     }
 }
