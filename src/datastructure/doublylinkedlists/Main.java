@@ -9,6 +9,8 @@ public class Main {
 
         doublyLinkedList.printList();
 
-        System.out.println(doublyLinkedList.get(3).getValue());
+        doublyLinkedList.set(1, 18);
+        doublyLinkedList.printList();
+
     }
 }
